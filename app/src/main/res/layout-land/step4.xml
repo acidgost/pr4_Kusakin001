@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099FF"
-    android:onClick="onStepAge1">
+    android:background="#0099FF">
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Очень приятно познакомиться ... \n Меня зовут бисквит ...\n Сколько тебе лет?"
+        android:layout_marginTop="8dp"
+        android:text="Отлично, можешь написать еще \n почту и телефон?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -25,50 +25,51 @@
         android:id="@+id/imageView"
         android:layout_width="146dp"
         android:layout_height="154dp"
-        android:layout_marginTop="100dp"
         android:background="@drawable/border_radius"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cat" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_radius"
+        android:text="Продолжить"
+        android:textColor="#0099FF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="345dp" />
+
     <EditText
-        android:id="@+id/tbYears"
-        android:layout_width="0dp"
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="20dp"
         android:background="@drawable/border_radius"
         android:ems="10"
-        android:hint="Введи текст"
+        android:hint="Телефон"
         android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
         android:paddingRight="20dp"
         android:paddingBottom="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:layout_editor_absoluteX="260dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="132dp"
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/border_radius"
-        android:onClick="onStepAge1"
-        android:text="Продолжить"
-        android:textColor="#0099FF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbYears"
-        app:layout_constraintVertical_bias="0.545" />
+        android:ems="10"
+        android:hint="Почта"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        tools:layout_editor_absoluteX="260dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

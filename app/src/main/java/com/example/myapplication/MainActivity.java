@@ -25,4 +25,24 @@ public class MainActivity extends AppCompatActivity {
         tvName.setText("Очень приятно познакомиться "+NameUser+" \n Меня зовут бисквит ...\n Сколько тебе лет?");
 
     }
+
+    public void onStepAge1(View view) {
+
+
+
+        setContentView(R.layout.step3);
+
+
+
+    }
+    public void onStepAge2(View view) {
+
+
+
+        setContentView(R.layout.step4);
+
+
+
+    }
+    
 }
